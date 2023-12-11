@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>SillyCircuit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Define your inline CSS styles here */
+    body {
+      background-color: green;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    
+    <!-- <section class="glass title">CHATBOT NAME</section> -->
+    <section class="chatbot-container card">
+      <div class="chatbot-header">
+        <div class="robots logo">
+          <div class="android">
+            <div class="head">
+              <div class="eyes">
+                <div class="left_eye"></div>
+                <div class="right_eye"></div>
+              </div>
+            </div>
+            <div class="upper_body">
+              <div class="left_arm"></div>
+              <div class="torso"></div>
+              <div class="right_arm"></div>
+            </div>
+            <div class="lower_body">
+              <div class="left_leg"></div>
+              <div class="right_leg"></div>
+            </div>
+          </div>
+        </div>
+        <h1>SillyCircuit</h1>
+        <h2>Try me?:wink:</h2>
+        <p class="supportId"><span id="greeting">User ID: Sign in
+          </span></p>
+      </div>
+      <div class="chatbot-conversation-container" id="chatbot-conversation">
+        <div class="speech speech-ai">
+          How can I help you?
+        </div>
+
+      </div>
+      <div class="button-container">
+        <!-- <div class="button-row">
+            <button class="chatbot-button">Button 1</button>
+            <button class="chatbot-button">Button 2</button>
+          </div> -->
+        <div class="button-row">
+          <button class="chatbot-button button1-selected" id="btn1">Movies</button>
+          <button class="chatbot-button button2" id="btn2">Games</button>
+          <button class="chatbot-button button3" id="btn3">Music</button>
+          <!-- <button class="chatbot-button">Button 4</button> -->
+        </div>
+
+      </div>
+
+
+      <form id="form" class="chatbot-input-container">
+        <input name="user-input" type="text" id="user-input" required>
+        <button id="submit-btn" class="submit-btn">
+          <img src="send-btn-icon.png" class="send-btn-icon">
+        </button>
+      </form>
+    </section>
+    <section class="glass footer">Made with <span style="color: red;">&#10084;</span> by Leo House</section>
+  </main>
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
